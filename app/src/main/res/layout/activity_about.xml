@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/travel"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/darktheme"
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="You want to see places out of the boring tourist brochures, feel domestic life and pure emotion of living? To meet new people, have fun, learn something new and original?"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/darktheme"
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Make most of every single trip you made across the globe using our TravelTrek app. TravelTrek is an mobile application where tourists can find local people willing to help them discover the most interesting parts of their world.\n\nIf you have any feedback, questions, or concerns, please contact us from previous section."
+        app:layout_constraintEnd_toEndOf="@+id/text1"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Journey :)"
+        android:textColor="@color/red"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintEnd_toEndOf="@+id/text2"
+        app:layout_constraintStart_toStartOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/text2"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

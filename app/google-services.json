@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470686337098",
+    "project_id": "traveltrek-f0f20",
+    "storage_bucket": "traveltrek-f0f20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470686337098:android:030c7a07f27a7e869efeb3",
+        "android_client_info": {
+          "package_name": "com.android.traveltrek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470686337098-9rql1mjgm1lc7mp60dr950imqj651m2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsZWakbBaBzjVQT_tFakUbnhDPwkbnNN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470686337098-9rql1mjgm1lc7mp60dr950imqj651m2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

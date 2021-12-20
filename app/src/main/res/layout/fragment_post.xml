@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Photo*"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/pickerCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:elevation="0dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:outlineSpotShadowColor="@android:color/transparent"
+                        app:cardCornerRadius="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@drawable/dotted_input_bg"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:src="@drawable/ic_baseline_photo_camera_24"
+                                app:tint="@color/darktheme" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Click a Photo"
+                                android:textColor="@color/darktheme"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/post_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop" />
+                    </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Title*"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/title_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/input_bg"
+                android:hint="Add a title"
+                android:inputType="textCapSentences"
+                android:padding="12dp"
+                android:textColorHint="@color/lighttheme"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Description*"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/description_post"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/input_bg"
+                android:gravity="top"
+                android:textColorHint="@color/lighttheme"
+                android:hint="Add a Description"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Location*"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/locationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/input_bg"
+                android:drawableTint="#8A8A8A"
+                android:hint="Enter location"
+                android:padding="12dp"
+                android:textColorHint="@color/lighttheme"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/add_post"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_button"
+                android:layout_gravity="center"
+                android:text="Add post"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+                app:strokeColor="#232121"
+                android:layout_marginBottom="100dp"/>
+
+        </LinearLayout>
+    
+</RelativeLayout>
+
+</ScrollView>
